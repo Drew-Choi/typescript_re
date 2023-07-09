@@ -3,14 +3,13 @@
   width: 100vw;
 
   .desc {
+    background-color: red;
     position: absolute;
     text-align: center;
-    right: 50%;
-    top: 200px;
+    top: 300px;
     font-size: 50px;
     font-weight: 700;
     line-height: 1.5em;
-    transform: translateX(50%);
     margin: 0px;
     color: white;
     z-index: 3;
@@ -18,9 +17,9 @@
 
   .deco {
     position: absolute;
-    background-color: black;
+    background-color: rgb(28, 28, 28);
     width: 100vw;
-    height: 800px;
+    height: 920px;
     opacity: 0.6;
     z-index: 2;
   }
@@ -30,7 +29,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 800px;
+    height: 920px;
     z-index: 1;
   }
 }
