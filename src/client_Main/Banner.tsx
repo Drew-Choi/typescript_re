@@ -3,13 +3,9 @@ import bannerStyle from './banner.module.scss';
 import BTN from 'BTN_group/BTN';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
-export default function Banner({
-  position,
-}: {
-  position: number;
-}): React.JSX.Element {
+export default function Banner(): React.JSX.Element {
   return (
-    <div className={bannerStyle.container}>
+    <section className={bannerStyle.container}>
       <div className={bannerStyle.img}></div>
       <div className={bannerStyle.meterialWrap}>
         <div className={bannerStyle.descWrap}>
@@ -24,6 +20,6 @@ export default function Banner({
           <KeyboardDoubleArrowDownIcon className={bannerStyle.arrowIcon} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
