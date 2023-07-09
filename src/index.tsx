@@ -3,21 +3,24 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import {RecoilRoot} from 'recoil'
-import './global.scss'
-
+import { RecoilRoot } from 'recoil';
+import './global.scss';
+import { ThemeProvider } from '@mui/material/styles';
+import { theme } from 'them';
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById('root') as HTMLElement,
 );
 root.render(
   <RecoilRoot>
-   <BrowserRouter>
-    <React.StrictMode>
-     <App />
-    </React.StrictMode>
-   </BrowserRouter>
-  </RecoilRoot>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </BrowserRouter>
+    </ThemeProvider>
+  </RecoilRoot>,
 );
 
 // If you want to start measuring performance in your app, pass a function

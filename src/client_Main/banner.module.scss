@@ -1,45 +1,104 @@
 .container {
   background-color: black;
   width: 100vw;
-
-  .descContainer{
-    position: relative;
-    display: flex;
-    justify-content: center;
-
-    .desc {
-      position: absolute;
-      text-align: center;
-      top: 300px;
-      font-size: 50px;
-      font-weight: 700;
-      line-height: 1.5em;
-      margin: 0px;
-      color: white;
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-      z-index: 3;
-
-      @media screen and (max-width: 900px) {
-        font-size: 40px;
-      }
-    }
-  }
-
-  .deco {
-    position: absolute;
-    background-color: rgb(10, 10, 10);
-    width: 100vw;
-    height: 920px;
-    opacity: 0.6;
-    z-index: 2;
-  }
+  
   .img {
+    position: relative;
+    top: 0px;
     background-image: url('../../public/mockups.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 920px;
+    height: 100vh;
+    min-height: 600px;
+    opacity: 0.5;
     z-index: 1;
   }
+
+  .meterialWrap{
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    // background-color: beige;
+    z-index: 2;
+
+   .descWrap{
+    position: relative;
+    top: 25vh;
+
+    .desc {
+      display: block;
+      position: relative;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 1.5em;
+      margin: 0px;
+      margin-bottom: 70px;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+
+      @media screen and (max-width: 900px) {
+        font-size: 40px;
+      }
+    }
+
+    .mainBtn{
+      display: block;
+      position: relative;
+      margin: 0px auto;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 10px 15px;
+    }
+
+    .subDesc{
+      position: relative;
+      margin-top: 100px;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .arrowIcon{
+      display: block;
+      position: relative;
+      font-size: 30px;
+      color: white;
+      margin: 0px auto;
+      animation: arrowDown 3s infinite ease-in-out;
+    }
+   }
+   
+  }
+
+}
+
+@keyframes arrowDown {
+  0%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  10%{
+    opacity: 0.5;
+    transform: translateY(5px);
+  }
+  20%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  30%{
+    opacity: 0.5;
+    transform: translateY(5px);
+  }
+  40%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+  
 }
