@@ -2,22 +2,32 @@
   background-color: black;
   width: 100vw;
 
-  .desc {
-    background-color: red;
-    position: absolute;
-    text-align: center;
-    top: 300px;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 1.5em;
-    margin: 0px;
-    color: white;
-    z-index: 3;
+  .descContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .desc {
+      position: absolute;
+      text-align: center;
+      top: 300px;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 1.5em;
+      margin: 0px;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+      z-index: 3;
+
+      @media screen and (max-width: 900px) {
+        font-size: 40px;
+      }
+    }
   }
 
   .deco {
     position: absolute;
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(10, 10, 10);
     width: 100vw;
     height: 920px;
     opacity: 0.6;
