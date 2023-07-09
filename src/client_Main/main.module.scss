@@ -9,7 +9,7 @@
     position: fixed;
     font-size:40px;
     color: rgb(255, 173, 73);
-    z-index: 5;
+    z-index: 10;
     background-color: white;
     padding: 15px;
     box-shadow: 0px 1px 8px 4px rgba(0, 0, 0, 0.2);
@@ -26,7 +26,7 @@
     width: 100vw;
     height: 80px;
     background-color: white;
-    z-index: 3;
+    z-index: 6;
     box-shadow: 1px 1px 8px 4px rgba(0, 0, 0, 0.2);
     transition: 0.5s ease-in-out;
  
@@ -51,7 +51,7 @@
     width: 100vw;
     height: 80px;
     background-color: white;
-    z-index: 3;
+    z-index: 6;
     box-shadow: 1px 1px 8px 4px rgba(0, 0, 0, 0.2);
     transition: 0.5s ease-in-out;
  
