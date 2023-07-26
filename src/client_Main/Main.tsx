@@ -7,6 +7,7 @@ import BTN from 'BTN_group/BTN';
 import styled, { StyleSheetManager } from 'styled-components';
 import { useRecoilState } from 'recoil';
 import { ScrollPositionRecoil } from '../recoil/positionAtom';
+import SwiperFunction from './SwiperFunction';
 
 const Phone_start = styled.img.attrs<{ position?: number }>(({ position }) => ({
   style: {
@@ -87,6 +88,7 @@ export default function Main(): React.JSX.Element {
           <BTN color="info">상담 신청하기</BTN>
         </div>
       </div>
+      <SwiperFunction />
     </main>
   );
 }
